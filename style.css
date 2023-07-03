@@ -92,6 +92,45 @@ html { scroll-behavior: smooth; }
     box-shadow: 5px 10px 30px hsla(39, 100%, 50%, 0.3);
 }
 
+.btn-primary {
+    background: var(--orange-web);
+    box-shadow: 5px 10px 30px hsla(39, 100%, 50%, 0.3);
+}
+
+.btn-primary:is(:hover, :focus) {
+    transform: translateY(-3px);
+    background: var(--gambog);
+}
+
+.h1, .h2, .h3 {
+    color: var(--rich-black-fogra-29);
+    font-family: var(--ff-poppins);
+}
+
+.h1 {
+    font-weight: var(--fw-700);
+    line-height: 1.4;
+    font-size: var(--fs-1);
+}
+
+.h2 {
+    font-size: var(--fs-1);
+    line-height: 1.6;
+}
+
+.h3 {
+    color: var(--onyx);
+    font-size: var(--fs-3);
+    line-height: 1.3;
+}
+
+.section-text {
+    color: var(--sonic-silver);
+    font-size: var(--fs-5);
+    font-family: var(--ff-rubik);
+    line-height: 1.8;
+}
+
 /* HEADER STYLES */
 .header {
     position: fixed;
@@ -182,3 +221,18 @@ html { scroll-behavior: smooth; }
     pointer-events: all;
     opacity: 1;
 }
+
+
+/* HERO */
+.hero {
+    background: var(--gradient);
+    padding: 150px 0 var(--section-padding);
+}
+
+.hero-banner { margin-bottom: 30px; }
+
+.hero-banner img { width: 100%; }
+
+.hero-title { margin-bottom: 20px; }
+
+.hero .section-text { margin-bottom: 45px; }

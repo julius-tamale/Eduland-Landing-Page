@@ -8,7 +8,8 @@ const navOpenBtn = document.querySelector('.menu-open-btn'),
     overlay = document.querySelector('.overlay');
 
 const headerEl = document.querySelector('.header');
-const navElemArr = [navOpenBtn, navCloseBtn, overlay]
+const goTopBtn = document.querySelector('.go-top');
+const navElemArr = [navOpenBtn, navCloseBtn, overlay];
 
 
 //hide or show nav menu on-click
@@ -29,3 +30,10 @@ window.addEventListener('scroll', () => {
 // console.log(navCloseBtn)
 // console.log(navbar)
 // console.log(overlay)
+
+// Go to top button
+
+window.addEventListener('scroll', () => {
+    window.scrollY >= 800 ? goTopBtn.classList.add('active')
+        : goTopBtn.classList.remove('active')
+})
